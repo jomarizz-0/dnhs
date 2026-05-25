@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2026 at 03:18 PM
+-- Generation Time: May 25, 2026 at 07:23 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -124,7 +124,7 @@ CREATE TABLE `student` (
   `first_name` varchar(50) NOT NULL,
   `middle_name` varchar(50) DEFAULT NULL,
   `last_name` varchar(50) NOT NULL,
-  `gender` varchar(10) NOT NULL,
+  `gender` char(1) NOT NULL,
   `birth_date` date NOT NULL,
   `address_barangay` varchar(100) NOT NULL,
   `address_municipality` varchar(100) NOT NULL,

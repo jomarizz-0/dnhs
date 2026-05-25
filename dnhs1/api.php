@@ -26,6 +26,7 @@ switch ($method) {
                     LEFT JOIN personnel p ON s.personnel_id = p.personnel_id
                     WHERE s.first_name LIKE :s OR s.last_name LIKE :s
                        OR s.middle_name LIKE :s OR s.address_municipality LIKE :s
+                       OR s.address_barangay LIKE :s
                     ORDER BY s.last_name, s.first_name
                 ");
                 $stmt->execute([':s' => "%$search%"]);
